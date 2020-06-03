@@ -30,12 +30,12 @@ jobs:
           cmd: install # will run `yarn install` command
           
     -name: Build react app
-     run: yarn build
+     run:yarn build
      
-     -name: install surge
-      run: npm install --global surge
+     -name:install surge
+      run:npm install --global surge
       
-    -name: Deploy surge
+    -name: dsurge 
      run: surge ./build reactsimple.usamakhanweb2.surge.sh ${{ secrets.SURGE_TOKEN}}
 
     
